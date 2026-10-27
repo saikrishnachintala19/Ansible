@@ -1,0 +1,14 @@
+  - 
+    name: krishna
+    age: 25
+    dob: 2026-10-28
+    Address:
+      - 
+        street: main
+        dorno: 1-15
+        viallage: kp
+      -
+        street: last
+        dorno: 1-50
+        viallge: vp
+        
