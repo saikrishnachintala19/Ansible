@@ -1,6 +1,6 @@
 - name: ping
   connection: local  # Mandatory! Tells Ansible where to run
-  host: localhost  #not ask any username and password
+  hosts: localhost  #not ask any username and password
   tasks: #tasks =modules=collections
     - name: localhost
       ping:  
