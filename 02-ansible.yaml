@@ -3,5 +3,7 @@
   hosts: local  #not ask any username and password
   tasks: #tasks =modules=collections
     - name: localhost
-      ping:  
+      ping: 
+      ansible.builtin.debug:
+
   
