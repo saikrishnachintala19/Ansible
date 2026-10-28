@@ -6,6 +6,7 @@
       ping:
     - name: "new function"
       ansible.builtin.debug:
+        msg: "this is learning"
 
 
   
