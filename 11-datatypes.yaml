@@ -15,10 +15,11 @@
   tasks:
     - name: this variable declaration
       debug:
-        msg: |
-         print the variable {{course}}
-         duration: {{total_duration}} to compltion of {{course}}
-         dureation in weeks : {{total_durationinweek}} to compltion of {course}
-         currently going sessions ansible: {{goingon}}
-         list of the sessions tops: {{list}}
+        msg: "{{item}}"
+      loop:
+        - print the variable {{course}}
+        - "duration: {{total_duration}} to compltion of {{course}}"
+        - "dureation in weeks : {{total_durationinweek}} to compltion of  {{course}}"
+        - "currently going sessions ansible: {{goingon}}"
+        - "list of the sessions tops: {{list}}"
 
