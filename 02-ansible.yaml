@@ -7,13 +7,11 @@
     - name: "new function"
       ansible.builtin.debug:
         msg: "this is learning"
-  tasks2: #tasks =modules=collections
     - name: localhost task2
       ping:
     - name: "new function"
       ansible.builtin.debug:
         msg: "this is t1 learning"
-  tasks3: #tasks =modules=collections
     - name: localhost task3
       ping:
     - name: "new function"
