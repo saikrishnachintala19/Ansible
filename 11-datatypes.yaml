@@ -11,6 +11,9 @@
     - shell
     - ansible
     - teraform
+    moredetails: #map/dictonaty
+      trainer: siva
+      month: 1
 
   tasks:
     - name: this variable declaration
@@ -27,4 +30,5 @@
         - "dureation in weeks : {{total_durationinweek}} to compltion of  {{course}} {{total_durationinweek | type_debug }}"
         - "currently going sessions ansible: {{goingon}} {{ goingon | type_debug }}"
         - "list of the sessions tops: {{list}} {{list | type_debug }}"
+        - "ditionary {{moredetails}} {{moredetails | type_debug}}"
 
