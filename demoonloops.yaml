@@ -1,0 +1,6 @@
+-
+ host: local
+ connection: local
+ tasks:
+    debug:
+      msg: hi hellow world
