@@ -6,5 +6,6 @@
       ping: 
     - name: "new function"
       ansible.builtin.debug:
+        msg: "Hello from localhost"
 
   
