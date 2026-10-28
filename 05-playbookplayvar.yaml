@@ -1,6 +1,6 @@
 - name: we declar a veriables in play
   connection: local
-  hosts: localhost
+  hosts: local
   vars:
    name: krishna
   tasks:
