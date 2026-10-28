@@ -1,0 +1,14 @@
+   - name : check with cmd
+     connection: local
+     hosts: local
+     vars_prompt:
+        - name: koko
+          prompt: please enter your name
+          private: false
+        - name: vako
+          prompt: please enter password
+          private: true
+     tasks:
+      - name: test with cmd
+        debug:
+        msg: this file from {{name}}
