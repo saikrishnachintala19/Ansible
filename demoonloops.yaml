@@ -5,7 +5,7 @@
     - name: print names
       debug:
         msg: "{{item}}" #itm is reserved key word
-      loops:
+      loop:
       - jhon
       - ram
       - marijan
