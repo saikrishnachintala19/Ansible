@@ -3,6 +3,8 @@
   connection: local
   vars:
     course: "devops with AI"
-    debug:
-      msg: "print the variable {{course}}"
+  tasks:
+    - name: this variable declaration
+      debug:
+        msg: "print the variable {{course}}"
 
