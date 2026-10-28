@@ -11,4 +11,4 @@
      tasks:
       - name: test with cmd
         debug:
-        msg: this file from {{your_name}}
+          msg: this file from {{your_name}}
