@@ -5,6 +5,8 @@
    student_name: krishna
   tasks:
     - name: this is a play veriable
+      var:
+        student_name: raju
       debug:
          msg: "The file is written by {{student_name}}"
 
