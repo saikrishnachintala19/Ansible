@@ -1,0 +1,12 @@
+- name : learning conditions
+  connection: local
+  hosts: local
+  tasks:
+    - name: we get info from gatherings
+      debug: 
+        msg: this os is from Redhat
+      when: ansible_facts.os_family == "RedHat"
+    - name: we have some info from grthrings
+      debug:
+        msg: this is debian famly
+      when: ansible_facts.os_family == "Debian"
