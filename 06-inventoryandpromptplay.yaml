@@ -1,0 +1,10 @@
+- name : file level
+  hosts: local
+  connection: local
+  vars_files:
+    - variables.yaml
+  tasks:
+    - name: "this is var from file"
+      debug:
+        msg: "The file is written by {{student_name}}"
+     

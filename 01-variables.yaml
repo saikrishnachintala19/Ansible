@@ -1,1 +1,2 @@
-- name : "learning variables"
+vars:
+  student_name: krishnafile
