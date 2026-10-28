@@ -1,8 +1,6 @@
 - name: "krishna currently in pressure"
   hosts: local
   connection: local
-  address: "room"
-  place: "anji"
   vars:
      learn:
         activity: "listen"
@@ -10,10 +8,10 @@
   tasks:
       - name: "task1"
         debug:
-          msg "holding the pressure"
+          msg: "holding the pressure"
       - name: "task2"
         debug:
-          msg "prasarising"
+          msg: "prasarising"
 
      
 
