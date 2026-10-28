@@ -2,13 +2,13 @@
      connection: local
      hosts: local
      vars_prompt:
-        - name: koko
+        - name: your_name
           prompt: please enter your name
           private: false
-        - name: vako
+        - name: passwd
           prompt: please enter password
           private: true
      tasks:
       - name: test with cmd
         debug:
-        msg: this file from {{koko}}
+        msg: this file from {{your_name}}
