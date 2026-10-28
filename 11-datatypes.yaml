@@ -1,0 +1,8 @@
+- name: explaing a data types
+  hosts: loacal
+  connection: local
+  var:
+    course: "devops with AI"
+    debug:
+      msg: print the variable {{course}}
+
