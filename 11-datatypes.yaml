@@ -22,4 +22,9 @@
         - "dureation in weeks : {{total_durationinweek}} to compltion of  {{course}}"
         - "currently going sessions ansible: {{goingon}}"
         - "list of the sessions tops: {{list}}"
+        - "print the variable {{course}} {{course | type_debug }}"
+        - "duration: {{total_duration}} to compltion of {{course}} {{ total_duration | type_debug }}"
+        - "dureation in weeks : {{total_durationinweek}} to compltion of  {{course}} {{total_durationinweek | type_debug }}"
+        - "currently going sessions ansible: {{goingon}} {{ goingon | type_debug }}"
+        - "list of the sessions tops: {{list}} {{list | type_debug }}"
 
