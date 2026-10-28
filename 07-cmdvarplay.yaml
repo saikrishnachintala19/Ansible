@@ -5,3 +5,5 @@
     - name: test with cmd
       debug:
         msg: this file from {{student_name}}
+
+ #ansible-playbook -i inventory.ini  07-cmdvarplay.yaml  -e "student_name=koko"
