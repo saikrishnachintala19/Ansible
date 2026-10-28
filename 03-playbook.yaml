@@ -8,10 +8,10 @@
   tasks:
       - name: "task1"
         debug:
-          msg: "holding the pressure"
+          msg: "holding the pressure on {{learn.activity}}"
       - name: "task2"
         debug:
-          msg: "prasarising"
+          msg: "prasarising on {{learn.currently}}"
 
      
 
