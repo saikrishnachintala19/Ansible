@@ -1,22 +1,29 @@
 - name: ping
   connection: local  # Mandatory! Tells Ansible where to run
   hosts: local  #not ask any username and password
+  var:
+    address1:
+      street: "main road"
+      zip: "1234"
+    address2:
+      street: "middile road"
+      zip: "3456"
   tasks: #tasks =modules=collections
     - name: localhost
       ping:
     - name: "new function"
       ansible.builtin.debug:
-        msg: "this is learning"
+        msg: "this is learning {{address2.street}},{{address2.zip}}"
     - name: localhost task2
       ping:
     - name: "new function"
       ansible.builtin.debug:
-        msg: "this is t1 learning"
+        msg: "this is t1 learning {{address1.street}},{{address2.zip}}"
     - name: localhost task3
       ping:
     - name: "new function"
       ansible.builtin.debug:
-        msg: "this is t2 learning"   
+        msg: "this is t2 learning"
        
 
   
