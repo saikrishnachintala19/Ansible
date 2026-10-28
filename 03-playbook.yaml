@@ -1,0 +1,20 @@
+- name: "krishna currently in pressure"
+  host: local
+  address: "room"
+  place: "anji"
+  vars:
+     learn:
+        activity: "listen"
+        currently: "stress"
+  tasks:
+      - name: "task1"
+        debug:
+          msg "holding the pressure"
+      - name: "task2"
+        debug:
+          msg "prasarising"
+
+     
+
+    
+  
