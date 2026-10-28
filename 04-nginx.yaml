@@ -1,0 +1,9 @@
+- name : "nginx installation"
+  connection: ssh
+  hosts: frontend
+  tasks: 
+    - name : "nginx installation"
+      package:
+         name: nginx
+         state: present
+     
