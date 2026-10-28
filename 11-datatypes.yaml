@@ -1,5 +1,5 @@
 - name: explaing a data types
-  hosts: loacal
+  hosts: local
   connection: local
   vars:
     course: "devops with AI"
