@@ -1,6 +1,6 @@
 - name : "nginx installation"
   hosts: frontend
-  become: yes #providing sudo access
+  became: yes #providing sudo access
   tasks: 
     - name : "nginx installation"
       package:
