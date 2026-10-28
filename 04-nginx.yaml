@@ -1,5 +1,6 @@
 - name : "nginx installation"
   hosts: frontend
+  connection: ssh
   become: yes #providing sudo access
   tasks: 
     - name : "nginx installation"
