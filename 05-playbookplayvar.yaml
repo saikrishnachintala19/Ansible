@@ -1,0 +1,10 @@
+- name: we declar a veriables in play
+  connection: local
+  hosts: localhost
+  vars:
+   name: krishna
+  tasks:
+    - name: this is a play veriable
+      debug:
+         msg: "The file is written by {{name}}"
+
