@@ -1,5 +1,6 @@
 - name: "krishna currently in pressure"
   hosts: local
+  connection: local
   address: "room"
   place: "anji"
   vars:
