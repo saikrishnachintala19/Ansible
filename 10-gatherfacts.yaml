@@ -8,6 +8,6 @@
     - name: print some random values
       debug: 
         msg: |
-          {{ansible_facts.all_ipv4_addresses}}
-          {{ansible_facts.mounts.block_available}}
+          {{ ansible_facts.all_ipv4_addresses }}
+          {{ ansible_facts.mounts.block_available }}
 
