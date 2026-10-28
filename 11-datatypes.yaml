@@ -4,5 +4,5 @@
   vars:
     course: "devops with AI"
     debug:
-      msg: print the variable {{course}}
+      msg: "print the variable {{course}}"
 
