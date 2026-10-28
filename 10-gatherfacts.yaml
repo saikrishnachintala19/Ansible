@@ -9,5 +9,5 @@
       debug: 
         msg: |
           {{ ansible_facts.all_ipv4_addresses }}
-  
+          {{ ansible_facts.env.GPG_TTY }}
 
