@@ -4,8 +4,8 @@
   tasks:
     - name: print names
     - debug:
-        msg: {{item}} #itm is reserved key word
-      loop:
+        msg: "{{item}}" #itm is reserved key word
+      loops:
       - jhon
       - ram
       - marijan
