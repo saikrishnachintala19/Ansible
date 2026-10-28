@@ -8,7 +8,7 @@
          name: nginx
          state: present
     - name : "start service"
-      sevice:
+      service:
         name: nginx
         state: started
         enable: yes
