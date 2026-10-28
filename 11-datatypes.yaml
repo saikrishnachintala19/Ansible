@@ -2,9 +2,23 @@
   hosts: local
   connection: local
   vars:
-    course: "devops with AI"
+    course: "devops with AI" #this is strig
+    total_duration: 5 #this is intiger
+    total_durationinweek: 20.1 #this is float
+    goingon: true #boolean
+    list:
+    - linux
+    - shell
+    - ansible
+    - teraform
+
   tasks:
     - name: this variable declaration
       debug:
-        msg: "print the variable {{course}}"
+        msg: |
+         print the variable {{course}}
+         duration: {{total_duration}} to compltion of {course}
+         dureation in weeks : {{total_durationinweek}} to compltion of {course}
+         currently going sessions ansible: {{goingon}}
+         list of the sessions tops: {{list}}
 
