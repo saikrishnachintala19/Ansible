@@ -1,7 +1,7 @@
 - name: ping
   connection: local  # Mandatory! Tells Ansible where to run
   hosts: local  #not ask any username and password
-  var:
+  vars:
     address1:
       street: "main road"
       zip: "1234"
