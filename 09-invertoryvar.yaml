@@ -1,0 +1,7 @@
+- name: this is invetory var test
+  connection: local
+  hosts: local
+  tasks:
+    - name : this is check for inventory var
+      debug: 
+        msg: the name is {{student_name}}

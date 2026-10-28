@@ -2,7 +2,7 @@
      connection: local
      hosts: local
      vars_prompt:
-        - myname: your_name # variable/key to store the answer in
+        - name: your_name # variable/key to store the answer in
           prompt: please enter your name # question shown to you
           private: false
         - name: passwd
