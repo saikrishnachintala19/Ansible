@@ -1,0 +1,7 @@
+- name : check with cmd
+  connection: local
+  hosts: local
+  tasks:
+    - name: test with cmd
+      debug:
+        msg: this file from {{student_name}}
