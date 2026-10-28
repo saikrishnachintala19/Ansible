@@ -4,6 +4,7 @@
   tasks: #tasks =modules=collections
     - name: localhost
       ping: 
+    - name: "new function"
       ansible.builtin.debug:
 
   
