@@ -2,9 +2,9 @@
   connection: local
   hosts: local
   vars:
-   name: krishna
+   student_name: krishna
   tasks:
     - name: this is a play veriable
       debug:
-         msg: "The file is written by {{name}}"
+         msg: "The file is written by {{student_name}}"
 
