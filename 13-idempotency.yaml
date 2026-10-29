@@ -4,5 +4,5 @@
   tasks:
   - name: create a user reboshop
     user:
-      name: roboshop #useradd roboshop in shell
+      name: lobo #useradd roboshop in shell
     
