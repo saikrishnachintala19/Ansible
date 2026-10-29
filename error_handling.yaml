@@ -5,3 +5,4 @@
   tasks:
     - name: error handlings
       command: id roboshop #linux command , when there is no ansible module is exist
+      register: user_output
