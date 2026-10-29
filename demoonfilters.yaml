@@ -1,7 +1,13 @@
 - name : demo for filters
   connection: local
   hosts: local
+  vars:
+    items: linux,shell,ansible,teraform
   tasks:
     - name: filters check
       debug:
         msg: this is filter {{ name | default('kittu') }}
+    - name : we convert items from string to list
+      debug:
+        msg: this is filter we use {{items | split(' ')}}
+        
