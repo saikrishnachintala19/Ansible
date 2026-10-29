@@ -8,10 +8,11 @@
     - sai
     - ch
     letter: ANSIBLE
+    letters: ansible
   tasks:
     - name: filters check
       debug:
-        msg: this is filter {{ name | default('kittu') }}
+        msg: this is filter {{ user | default('kittu') }}
     - name : we convert items from string to list
       debug:
         msg: this is filter we use {{items | split()}}
@@ -21,5 +22,8 @@
     - name: we convert items from upper letters to lower letters
       debug:
         msg: this is filter we use {{letter | lower}}
+    - name: we convert items from lower letters to upper letters
+      debug:
+        msg: this is filter we use {{letter | upper}}
 
         
