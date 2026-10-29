@@ -4,4 +4,4 @@
   tasks:
     - name: filters check
       debug:
-        msg: this is filter {{name}}
+        msg: this is filter {{name | default (kittu)}}
