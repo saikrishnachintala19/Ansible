@@ -1,6 +1,7 @@
 - name: create user
   connection: local
   hosts: local
+  become: yes
   tasks:
   - name: create a user reboshop
     user:
