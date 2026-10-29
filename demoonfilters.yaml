@@ -7,14 +7,19 @@
     - krishna
     - sai
     - ch
+    letter: ANSIBLE
   tasks:
     - name: filters check
       debug:
         msg: this is filter {{ name | default('kittu') }}
     - name : we convert items from string to list
       debug:
-        msg: this is filter we use {{items | split(' ')}}
+        msg: this is filter we use {{items | split()}}
     - name: we convert items from list to string
       debug:
         msg: this is filter we use {{name | join(' ')}}
+    - name: we convert items from upper letters to lower letters
+      debug:
+        msg: this is filter we use {{letter | lower}}
+
         
