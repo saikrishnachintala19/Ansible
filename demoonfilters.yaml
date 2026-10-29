@@ -1,0 +1,7 @@
+- name : demo for filters
+  connection: local
+  hosts: local
+  tasks:
+    - name: filters check
+      debug:
+        msg: this is filter {{name}}

@@ -15,3 +15,4 @@
          name: "{{item.name}}"
          state: "{{item.state}}"
       loop: "{{packages}}"
+  #Easy rule: use {{ ... }} to insert a variable; use quotes to mark text; use single { ... } only for compact YAML data. In your package list, the compact entries are valid, and {{ item.name }} later reads the name value from each entry.
