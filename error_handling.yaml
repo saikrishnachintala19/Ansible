@@ -10,3 +10,6 @@
     - name: print the output
       debug:
         msg: "{{user_output}}"
+    - name: condtion check
+      command: useradd roboshop
+      when: user_output.rc != 0
