@@ -3,8 +3,8 @@
   hosts: local
   tasks:
   - name: test command module
-    #command: cat /etc/passwd | grep -i ec2_user
-    shell: cat /etc/passwd | grep ec2_user
+    command: cat /etc/passwd | grep ec2-user
+    #shell: cat /etc/passwd | grep ec2-user
     register: cpmmand_output
   - name: print that output
     debug:
