@@ -1,7 +1,7 @@
 - name: error handiling
   connection: local
   hosts: local
+  become: yes
   tasks:
     - name: error handlings
       command: id roboshop #linux command , when there is no ansible module is exist
-      
