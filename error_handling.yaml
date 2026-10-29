@@ -9,4 +9,4 @@
       ignore_errors: true
     - name: print the output
       debug:
-        msg: {{user_output}}
+        msg: "{{user_output}}"
