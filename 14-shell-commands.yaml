@@ -1,0 +1,10 @@
+- name: shell vs command
+  connection: local
+  hosts: local
+  tasks:
+  - name: test command module
+    command: cat /etc/passwd | grep -i ec2_user
+    register: cpmmand_output
+  - name: print that output
+    debug:
+     msg: "{{cpmmand_output}}"
