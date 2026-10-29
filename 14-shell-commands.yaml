@@ -11,8 +11,8 @@
      msg: "{{cpmmand_output}}"
   - name: use redirection
     #command: ll -a > /tmp/tmp.txt
-    shell: ll -a > /tmp/tmp.txt
+    shell: ls -a > /tmp/tmp.txt
     register: redirection_output
   - name: printing redirection output
     debug:
-      msg: "{{redirection_output}}"
+      msg: "{{ redirection_output }}"
