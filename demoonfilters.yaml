@@ -16,5 +16,5 @@
         msg: this is filter we use {{items | split(' ')}}
     - name: we convert items from list to string
       debug:
-        msg: this is filter we use {{name | join( )}}
+        msg: this is filter we use {{name | join(' ')}}
         
