@@ -9,3 +9,9 @@
   - name: print that output
     debug:
      msg: "{{cpmmand_output}}"
+  - name: use redirection
+    command: ll -a > /tmp/tmp.txt
+    register: redirection_output
+  - name: printing redirection output
+    debug:
+      msg: "{{redirection_output}}"
