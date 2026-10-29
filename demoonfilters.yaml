@@ -3,6 +3,10 @@
   hosts: local
   vars:
     items: linux,shell,ansible,teraform
+    name:
+    - krishna
+    - sai
+    - ch
   tasks:
     - name: filters check
       debug:
@@ -10,4 +14,7 @@
     - name : we convert items from string to list
       debug:
         msg: this is filter we use {{items | split(' ')}}
+    - name: we convert items from list to string
+      debug:
+        msg: this is filter we use {{name | join()}}
         
