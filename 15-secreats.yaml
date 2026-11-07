@@ -4,5 +4,5 @@
   tasks:
     - name: aws secret manager
       debug:
-        #msg: "{{ (lookup('amazon.aws.secretsmanager_secret', 'roboshop/dev/ansible', region='us-east-1') | from_json)['ec2_user'] }}"
+        msg: "{{ (lookup('amazon.aws.secretsmanager_secret', 'roboshop/dev/ansible', region='us-east-1') | from_json)['ec2_user'] }}"
         msg: "{{ lookup('amazon.aws.secretsmanager_secret', 'roboshop/dev/ansible', region='us-east-1') | from_json | json_query('ec2_user') }}"
