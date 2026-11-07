@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   tasks:
-    name: aws secreat manager
-    debug:
-      msg: "{{ lookup('amazon.aws.secretsmanager_secret', 'ec2_user') }}"
+    - name: aws secret manager
+      debug:
+        msg: "{{ lookup('amazon.aws.secretsmanager_secret', 'ec2_user') }}"
